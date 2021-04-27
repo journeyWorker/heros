@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 
 function BanIcon(props: React.SVGProps<SVGSVGElement>): JSX.Element {
   return (

@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 
 function ChatIcon(props: React.SVGProps<SVGSVGElement>): JSX.Element {
   return (
