@@ -1,5 +1,10 @@
 import React from 'react';
 
+const size = {
+  width: '24px',
+  height: '24px',
+};
+
 function ChevronDoubleLeftIcon(props: React.SVGProps<SVGSVGElement>): JSX.Element {
   return (
     <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...props}>
@@ -13,4 +18,9 @@ function ChevronDoubleLeftIcon(props: React.SVGProps<SVGSVGElement>): JSX.Elemen
   );
 }
 
-export default ChevronDoubleLeftIcon;
+const Asset = {
+  size,
+  View: React.memo(ChevronDoubleLeftIcon),
+};
+
+export default Asset;

@@ -1,5 +1,10 @@
 import React from 'react';
 
+const size = {
+  width: '24px',
+  height: '24px',
+};
+
 function CalendarIcon(props: React.SVGProps<SVGSVGElement>): JSX.Element {
   return (
     <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...props}>
@@ -13,4 +18,9 @@ function CalendarIcon(props: React.SVGProps<SVGSVGElement>): JSX.Element {
   );
 }
 
-export default CalendarIcon;
+const Asset = {
+  size,
+  View: React.memo(CalendarIcon),
+};
+
+export default Asset;

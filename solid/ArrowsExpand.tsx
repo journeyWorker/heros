@@ -1,5 +1,10 @@
 import React from 'react';
 
+const size = {
+  width: '20px',
+  height: '20px',
+};
+
 function ArrowsExpandIcon(props: React.SVGProps<SVGSVGElement>): JSX.Element {
   return (
     <svg viewBox="0 0 19 20" fill="currentColor" {...props}>
@@ -14,4 +19,9 @@ function ArrowsExpandIcon(props: React.SVGProps<SVGSVGElement>): JSX.Element {
   );
 }
 
-export default ArrowsExpandIcon;
+const Asset = {
+  size,
+  View: React.memo(ArrowsExpandIcon),
+};
+
+export default Asset;

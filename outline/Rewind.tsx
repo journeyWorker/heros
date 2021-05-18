@@ -1,5 +1,10 @@
 import React from 'react';
 
+const size = {
+  width: '24px',
+  height: '24px',
+};
+
 function RewindIcon(props: React.SVGProps<SVGSVGElement>): JSX.Element {
   return (
     <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...props}>
@@ -13,4 +18,9 @@ function RewindIcon(props: React.SVGProps<SVGSVGElement>): JSX.Element {
   );
 }
 
-export default RewindIcon;
+const Asset = {
+  size,
+  View: React.memo(RewindIcon),
+};
+
+export default Asset;

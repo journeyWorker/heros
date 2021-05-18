@@ -1,5 +1,10 @@
 import React from 'react';
 
+const size = {
+  width: '20px',
+  height: '20px',
+};
+
 function HomeIcon(props: React.SVGProps<SVGSVGElement>): JSX.Element {
   return (
     <svg viewBox="0 0 20 20" fill="currentColor" {...props}>
@@ -8,4 +13,9 @@ function HomeIcon(props: React.SVGProps<SVGSVGElement>): JSX.Element {
   );
 }
 
-export default HomeIcon;
+const Asset = {
+  size,
+  View: React.memo(HomeIcon),
+};
+
+export default Asset;

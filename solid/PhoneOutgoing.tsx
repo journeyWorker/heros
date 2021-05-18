@@ -1,5 +1,10 @@
 import React from 'react';
 
+const size = {
+  width: '20px',
+  height: '20px',
+};
+
 function PhoneOutgoingIcon(props: React.SVGProps<SVGSVGElement>): JSX.Element {
   return (
     <svg viewBox="0 0 20 20" fill="currentColor" {...props}>
@@ -9,4 +14,9 @@ function PhoneOutgoingIcon(props: React.SVGProps<SVGSVGElement>): JSX.Element {
   );
 }
 
-export default PhoneOutgoingIcon;
+const Asset = {
+  size,
+  View: React.memo(PhoneOutgoingIcon),
+};
+
+export default Asset;

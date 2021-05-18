@@ -1,5 +1,10 @@
 import React from 'react';
 
+const size = {
+  width: '20px',
+  height: '20px',
+};
+
 function TrendingUpIcon(props: React.SVGProps<SVGSVGElement>): JSX.Element {
   return (
     <svg viewBox="0 0 20 20" fill="currentColor" {...props}>
@@ -12,4 +17,9 @@ function TrendingUpIcon(props: React.SVGProps<SVGSVGElement>): JSX.Element {
   );
 }
 
-export default TrendingUpIcon;
+const Asset = {
+  size,
+  View: React.memo(TrendingUpIcon),
+};
+
+export default Asset;

@@ -1,5 +1,10 @@
 import React from 'react';
 
+const size = {
+  width: '20px',
+  height: '20px',
+};
+
 function SaveIcon(props: React.SVGProps<SVGSVGElement>): JSX.Element {
   return (
     <svg viewBox="0 0 20 20" fill="currentColor" {...props}>
@@ -8,4 +13,9 @@ function SaveIcon(props: React.SVGProps<SVGSVGElement>): JSX.Element {
   );
 }
 
-export default SaveIcon;
+const Asset = {
+  size,
+  View: React.memo(SaveIcon),
+};
+
+export default Asset;

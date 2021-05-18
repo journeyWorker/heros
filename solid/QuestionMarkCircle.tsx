@@ -1,5 +1,10 @@
 import React from 'react';
 
+const size = {
+  width: '20px',
+  height: '20px',
+};
+
 function QuestionMarkCircleIcon(props: React.SVGProps<SVGSVGElement>): JSX.Element {
   return (
     <svg viewBox="0 0 20 20" fill="currentColor" {...props}>
@@ -12,4 +17,9 @@ function QuestionMarkCircleIcon(props: React.SVGProps<SVGSVGElement>): JSX.Eleme
   );
 }
 
-export default QuestionMarkCircleIcon;
+const Asset = {
+  size,
+  View: React.memo(QuestionMarkCircleIcon),
+};
+
+export default Asset;

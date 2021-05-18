@@ -1,5 +1,10 @@
 import React from 'react';
 
+const size = {
+  width: '20px',
+  height: '20px',
+};
+
 function ZoomInIcon(props: React.SVGProps<SVGSVGElement>): JSX.Element {
   return (
     <svg viewBox="0 0 20 20" fill="currentColor" {...props}>
@@ -13,4 +18,9 @@ function ZoomInIcon(props: React.SVGProps<SVGSVGElement>): JSX.Element {
   );
 }
 
-export default ZoomInIcon;
+const Asset = {
+  size,
+  View: React.memo(ZoomInIcon),
+};
+
+export default Asset;

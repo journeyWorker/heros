@@ -1,5 +1,10 @@
 import React from 'react';
 
+const size = {
+  width: '20px',
+  height: '20px',
+};
+
 function ViewGridAddIcon(props: React.SVGProps<SVGSVGElement>): JSX.Element {
   return (
     <svg viewBox="0 0 20 20" fill="currentColor" {...props}>
@@ -8,4 +13,9 @@ function ViewGridAddIcon(props: React.SVGProps<SVGSVGElement>): JSX.Element {
   );
 }
 
-export default ViewGridAddIcon;
+const Asset = {
+  size,
+  View: React.memo(ViewGridAddIcon),
+};
+
+export default Asset;

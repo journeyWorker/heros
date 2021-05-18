@@ -1,5 +1,10 @@
 import React from 'react';
 
+const size = {
+  width: '24px',
+  height: '24px',
+};
+
 function CloudDownloadIcon(props: React.SVGProps<SVGSVGElement>): JSX.Element {
   return (
     <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...props}>
@@ -13,4 +18,9 @@ function CloudDownloadIcon(props: React.SVGProps<SVGSVGElement>): JSX.Element {
   );
 }
 
-export default CloudDownloadIcon;
+const Asset = {
+  size,
+  View: React.memo(CloudDownloadIcon),
+};
+
+export default Asset;
